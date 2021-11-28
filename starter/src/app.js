@@ -14,13 +14,17 @@
  * limitations under the License.
  */
  import { Loader } from '@googlemaps/js-api-loader';
+ 
  const apiOptions = {
     apiKey: "AIzaSyCx_RMiJMjpN0qc_NkQQToud2k0v56JHA0"
   }
+  
   const loader = new Loader(apiOptions);
+  
   loader.load().then(() => {
     console.log('Maps JS API loaded');
   });
+  
   function displayMap() {
     const mapOptions = {
       center: { lat: -33.860664, lng: 151.208138 },
